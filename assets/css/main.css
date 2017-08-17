@@ -2068,16 +2068,17 @@
 		-webkit-flex-wrap: wrap;
 		-ms-flex-wrap: wrap;
 		flex-wrap: wrap;
-		border-radius: 0.25em;
+		border-radius: 0.5em;
+		width: 80%;
 		border: solid 1px rgba(255, 255, 255, 0.15);
-		background: rgba(255, 255, 255, 0.05);
-		margin: 0 0 2em 0;
+		background: rgba(255, 255, 255, 0.85);
+		margin: 0 auto;
 	}
 
 		.features section {
 			padding: 3.5em 3em 1em 7em ;
 			width: 50%;
-			border-top: solid 1px rgba(255, 255, 255, 0.15);
+			border-top: solid 0px rgba(255, 255, 255, 0.15);
 			position: relative;
 		}
 
@@ -3097,11 +3098,11 @@
 			}
 
 		.spotlights > section:nth-child(2) {
-			background-color: rgba(0, 0, 0, 0.05);
+			background-color: rgba(0, 0, 0, 0);
 		}
 
 		.spotlights > section:nth-child(3) {
-			background-color: rgba(0, 0, 0, 0.1);
+			background-color: rgba(0, 0, 0, 0);
 		}
 
 		.spotlights > section.inactive > .image:before, body.is-loading .spotlights > section > .image:before {
@@ -3977,7 +3978,7 @@
 			display: block;
 			height: 100%;
 			left: 0;
-			opacity: 0.70;
+			opacity: 0.0;
 			position: absolute;
 			top: 0;
 			width: 100%;
