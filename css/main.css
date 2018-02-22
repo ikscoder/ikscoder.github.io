@@ -1,0 +1,47 @@
+body {
+    display: flex;
+    min-height: 100vh;
+    flex-direction: column;
+}
+
+main {
+    flex: 1 0 auto;
+}
+
+ul.fas {
+    cursor: default;
+    list-style: none;
+    padding-left: 0;
+}
+
+    ul.fas li {
+        display: inline-block;
+        padding: 0 0.75em 0 0;
+    }
+
+        ul.fas li:last-child {
+            padding-right: 0;
+        }
+
+        ul.fas li > a, ul.fas li > span {
+            border: 0;
+            text-decoration: none;
+        }
+
+            ul.fas li > a:before, ul.fas li > span:before {
+                -moz-osx-font-smoothing: grayscale;
+                -webkit-font-smoothing: antialiased;
+                font-family: FontAwesome;
+                font-style: normal;
+                font-weight: normal;
+                text-transform: none !important;
+                color: var(--selection-color)
+            }
+
+            ul.fas li > a .label, ul.fas li > span .label {
+                display: none;
+            }
+
+.brand-logo {
+    margin-left: 30px
+}

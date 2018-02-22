@@ -1,63 +1,90 @@
-<!DOCTYPE HTML>
-<html>
-	<head>
-		<title>Internet Of Pretty Things</title>
-		<meta charset="utf-8" />
-		<meta name="viewport" content="width=device-width, initial-scale=1" />
-		<!--[if lte IE 8]><script src="assets/js/ie/html5shiv.js"></script><![endif]-->
-		<link rel="stylesheet" href="assets/css/main.css" />
-		<!--[if lte IE 9]><link rel="stylesheet" href="assets/css/ie9.css" /><![endif]-->
-		<!--[if lte IE 8]><link rel="stylesheet" href="assets/css/ie8.css" /><![endif]-->
-	</head>
-	<body> 
-					<section class="wrapper fullscreen style3 fade-up" style="background: rgba(38,50,56, 1);">
-						<div class="inner">
-						<div style="text-align: center;border-radius: 0.5em;background: rgba(255,255,255, 0.85);margin: 1em auto;width:80%">				
-							<h1 class="text-selection" style="text-align: center">Internet Of Pretty Things</h1>
-						</div>
-					<div style="text-align: center;border-radius: 0.5em;background: rgba(255,255,255, 0.85);margin: 0 auto;width:90%">		
-							<p class="text-main" style="text-align: center">Цель данной работы состоит в разработке и реализации системы управления устройствами и мониторинга их состояния посредством сети интернет. Для достижения цели была разработана платформа, являющаяся веб-сервером, написанным на языке Java. Планируется, что платформа будет проектом с открытым исходным кодом. Она будет иметь модульную структуру, что позволит комбинировать ее с различными сторонними проектами. Это обеспечит широкое распространение и быстрое развитие данной системы. Во время разработки платформы было введено понятие «модель», в которое вкладывается значение экземпляра «Умной организации». Например, автоматизированная теплица в платформе понимается как модель «Умной теплицы». Реализация платформы представляет собой RESTful сервис.   </p>	
-						</div>
-						</div>
-					</section>
-					<section class="wrapper fullscreen style3 fade-up" style="background: rgba(38,50,56, 1);">
-						<div style="text-align: center;border-radius: 0.5em;background: rgba(255,255,255, 0.85);margin: 1em auto;width:80%">		
-							<h1 class="text-selection" style="text-align: center">Архитектура сервиса</h1>	
-						</div>
-						<img src="images/image7.png" style="margin: 0 auto;width:90%"/>						
-					</section>
-							<!-- Footer -->
-		<footer id="footer" class="wrapper style1-alt">
-        <div class="inner">
-			<div class="h3 text-back">Обратная связь</div>
-            <ul class="icons">
-                <li><a href="https://vk.com/iks_iks" class="icon alt fa-vk"><span class="label">VK</span></a>
-                </li>
-                <li>
-                    <a href="https://telegram.me/iks_s" class="icon alt fa-paper-plane-o">
-                        <span class="label">Telegram</span>
-                    </a>
-                </li>
-                <li><a href="https://github.com/ikscoder" class="icon alt fa-github"><span class="label">GitHub</span></a>
-                </li>
-
-                <li><a href="mailto:igor.stubarev@yandex.ru" class="icon alt fa-envelope-o "><span class="label">Email</span></a>
-                </li>
+﻿<!DOCTYPE HTML>
+<html lang="ru">
+<head>
+    <title>Internet Of Pretty Things</title>
+    <meta name="author" content="Stubarev Igor">
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/css/materialize.min.css">
+    <link rel="stylesheet" href="./css/font-awesome.min.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="./css/main.css">
+</head>
+<body>
+    <ul id="dropdown1" class="dropdown-content">
+        <li><a href="./iopt.html">Платформа IOPT</a></li>
+        <li><a href="./mastery.html" class="active">mastery</a></li>
+    </ul>
+    <ul id="dropdown2" class="dropdown-content">
+        <li><a href="./worldskills2017.html">World Skills 2017</a></li>
+    </ul>
+    <nav>
+        <div class="nav-wrapper blue-grey darken-4">
+            <a href="#" class="brand-logo center-align"><i>Internet Of Pretty Things</i></a>
+            <ul id="nav-mobile" class="right hide-on-med-and-down">
+                <li><a href="./index.html">Обо мне</a></li>
+                <li><a class="dropdown-button" href="#!" data-activates="dropdown1">Проекты<i class="material-icons right">arrow_drop_down</i></a></li>
+                <li><a class="dropdown-button" href="#!" data-activates="dropdown2">Мероприятия<i class="material-icons right">arrow_drop_down</i></a></li>
             </ul>
-          <div class="h3 text-back">&copy; iks Стубарев Игорь</div>
-
         </div>
+    </nav>
+    <main class="row" style="width: 100%;margin-top: 80px">
+        <div class="col s10 offset-s1">
+            <section class="row">
+                <div class="col s2"><img alt="Photo" src="images/iopt.png" width="200" height="200" style="overflow: hidden; width: 150px; height: 150px; border-radius: 50%; margin-left: 50px; margin-top: 80px; display: inline-flex; flex-basis: 100px" /></div>
+                <div class="col s10">
+
+                    <section style=" margin-top: 75px;">
+                        <div>
+                            <p>Цель данной работы состоит в разработке и реализации системы управления устройствами и мониторинга их состояния посредством сети интернет. Для достижения цели была разработана платформа, являющаяся веб-сервером, написанным на языке Java. Планируется, что платформа будет проектом с открытым исходным кодом. Она будет иметь модульную структуру, что позволит комбинировать ее с различными сторонними проектами. Это обеспечит широкое распространение и быстрое развитие данной системы. Во время разработки платформы было введено понятие «модель», в которое вкладывается значение экземпляра «Умной организации». Например, автоматизированная теплица в платформе понимается как модель «Умной теплицы». Реализация платформы представляет собой RESTful сервис.</p>
+                        </div>
+                    </section>
+                    <section>
+                        <h2>Архитектура сервиса</h2>
+                        <img src="images/image7.png" style="margin: 0 auto; width: 90%" alt="Architecture" />
+                    </section>
+
+                </div>
+            </section>
+        </div>
+    </main>
+
+    <footer class=" blue-grey darken-4 white-text">
+        <div class="footer-copyright">
+            <div class="container">
+
+                <div class="left">
+                    <p style="display: inline-flex; flex-direction: row;">Обратная связь</p>
+
+                    <ul class="fas" style="padding-left: 10px; display: inline-flex; flex-direction: row;">
+                        <li>
+                            <a href="https://vk.com/iks_iks" class="fa fa-vk"><span class="label">VK</span></a>
+                        </li>
+                        <li>
+                            <a href="https://telegram.me/iks_s" class="fa fa-paper-plane-o">
+                                <span class="label">Telegram</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="https://github.com/ikscoder" class="fa fa-github"><span class="label">GitHub</span></a>
+                        </li>
+
+                        <li>
+                            <a href="mailto:igor.stubarev@yandex.ru" class="fa fa-envelope-o "><span class="label">Email</span></a>
+                        </li>
+                    </ul>
+                    <p style="display: inline-flex; flex-direction: row;">    © 2018 Stubarev Igor</p>
+                </div>
+            </div>
+        </div>
+
     </footer>
-			
-
-		<!-- Scripts -->
-			<script src="assets/js/jquery.min.js"></script>
-			<script src="assets/js/jquery.scrollex.min.js"></script>
-			<script src="assets/js/jquery.scrolly.min.js"></script>
-			<script src="assets/js/skel.min.js"></script>
-			<script src="assets/js/util.js"></script>
-			<!--[if lte IE 8]><script src="assets/js/ie/respond.min.js"></script><![endif]-->
-			<script src="assets/js/main.js"></script>
-
-	</body>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/js/materialize.min.js"></script>
+    <script type="text/javascript">
+        $(document).ready(function () {
+            $('.tooltipped').tooltip({ delay: 50 });
+        });
+    </script>
+</body>
 </html>
