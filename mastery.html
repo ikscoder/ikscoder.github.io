@@ -22,41 +22,45 @@
     <div class="nav-wrapper row">
         <a href="#" class="col s12 m4 brand-logo center-align"><i>Analytical system</i></a>
         <ul id="nav-mobile" class="col s12 m8 right">
-            <li><a href="./index.html">Обо мне</a></li>
-            <li><a class="dropdown-button" href="#!" data-activates="dropdown1">Проекты<i class="material-icons right">arrow_drop_down</i></a></li>
-            <li><a class="dropdown-button" href="#!" data-activates="dropdown2">Мероприятия<i class="material-icons right">arrow_drop_down</i></a></li>
+            <li class="right"><a class="dropdown-button" href="#!" data-activates="dropdown1">Проекты<i class="material-icons right">arrow_drop_down</i></a></li>
+            <li class="right"><a class="dropdown-button" href="#!" data-activates="dropdown2">Мероприятия<i class="material-icons right">arrow_drop_down</i></a></li>
+            <li class="right"><a href="./index.html">Обо мне</a></li>
         </ul>
     </div>
 </nav>
 <main class="row" style="width: 100%">
-    <div class="col s10 offset-s1">
+    <div class="container col s10 offset-s1">
         <section>
-            <p class="center-align">Система для интеллектуального анализа данных</p>
+            <h4 class="center-align">Система для интеллектуального анализа данных</h4>
         </section>
         <div class="carousel carousel-slider center" data-indicators="true">
+            <div class="carousel-fixed-item center">
+                <a class="btn-floating btn-large waves-effect waves-light red carousel-left"><i class="material-icons">arrow_back</i></a>
+                <a class="btn-floating btn-large waves-effect waves-light red carousel-right"><i class="material-icons">arrow_forward</i></a>
+            </div>
             <div class="carousel-item light-green-text" href="#one">
                 <h2>Актуальная</h2>
-                <img src="images/System_architecture.png"/>
+                <img class="responsive-img materialboxed" src="images/System_architecture.png"/>
             </div>
             <div class="carousel-item light-green-text" href="#one">
                 <h2>Сентябрь 2017</h2>
-                <img src="images/arch/september2017.png" />
+                <img class="materialboxed" src="images/arch/september2017.png"/>
             </div>
-            <div class="carousel-item light-green-text"  href="#one">
+            <div class="carousel-item light-green-text" href="#one">
                 <h2>Октябрь 2017</h2>
-                <img src="images/arch/october2017.png" />
+                <img class="materialboxed" src="images/arch/october2017.png"/>
             </div>
             <div class="carousel-item light-green-text" href="#one">
                 <h2>Ноябрь 2017</h2>
-                <img src="images/arch/november2017.png" />
+                <img class="materialboxed" src="images/arch/november2017.png"/>
             </div>
             <div class="carousel-item light-green-text" href="#one">
                 <h2>Декабрь 2017</h2>
-                <img src="images/arch/december2017.png" />
+                <img class="materialboxed" src="images/arch/december2017.png"/>
             </div>
             <div class="carousel-item light-green-text" href="#one">
                 <h2>Январь 2018</h2>
-                <img src="images/arch/january2018.png" />
+                <img class="materialboxed" src="images/arch/january2018.png"/>
             </div>
         </div>
     </div>
@@ -98,7 +102,8 @@
     $(document).ready(function() {
         $('.carousel').carousel();
     });
-    $('.carousel.carousel-slider').carousel({fullWidth: true});
+    $('.carousel.carousel-slider').carousel({ fullWidth: true });
+    $('#myLink').click(function () { MyFunction(); return false; });
 </script>
 </body>
 </html>

@@ -9,7 +9,17 @@
     <link rel="stylesheet" href="./css/font-awesome.min.css">
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <link rel="stylesheet" href="./css/main.css">
+    <style>
+        header, main, footer {
+            padding-left: 300px;
+        }
 
+        @media only screen and (max-width : 992px) {
+            header, main, footer {
+                padding-left: 0;
+            }
+        }
+    </style>
 </head>
 <body>
 <ul id="dropdown1" class="dropdown-content">
@@ -19,25 +29,42 @@
 <ul id="dropdown2" class="dropdown-content">
     <li><a href="./worldskills2017.html">World Skills 2017</a></li>
 </ul>
-<nav class="nav-extended blue-grey darken-4 ">
+<!--<nav class="nav-extended blue-grey darken-4 ">
     <div class="nav-wrapper">
         <div class="row">
-            <img class="col m2 hide-on-small-only" alt="Photo" src="images/M0plQrilL0I.jpg" width="120" height="100" style="overflow: hidden; width: 120px; height: 100px; margin-top: 10px; border-radius: 50%; margin-left: 50px; display: inline-flex; flex-basis: 100px"/>
-            <div class="col s12 m5" style="margin-left: 30px">
+            <img class="col m2 hide-on-small-only" alt="Photo" src="images/M0plQrilL0I.jpg" width="120" height="100" style="overflow: hidden;width: 120px; height: 100px;  margin-top: 20px; border-radius: 50%; margin-left: 50px; display: inline-flex; flex-basis: 100px"/>
+            <div class="col s12 m5" style="margin-left: 20px">
                 <h3 style="margin-bottom: 0">Стубарев Игорь</h3>
                 <small>Junior .Net разработчик</small>
                 <small>Qlik Sense Certified Data Architect</small>
                 <a href="mailto:igor.stubarev@yandex.ru" class="fa fa-envelope-o tooltipped" data-position="bottom" data-delay="50" data-tooltip="Email"><span> Связяться</span></a>
             </div>
             <ul id="nav-mobile" class="col s12 m5 right">
-                <li><a href="./index.html">Обо мне</a></li>
-                <li><a class="dropdown-button" href="#!" data-activates="dropdown1">Проекты<i class="material-icons right">arrow_drop_down</i></a></li>
-                <li><a class="dropdown-button" href="#!" data-activates="dropdown2">Мероприятия<i class="material-icons right">arrow_drop_down</i></a></li>
+                <li class="right"><a class="dropdown-button" href="#!" data-activates="dropdown1">Проекты<i class="material-icons right">arrow_drop_down</i></a></li>
+                <li class="right"><a class="dropdown-button" href="#!" data-activates="dropdown2">Мероприятия<i class="material-icons right">arrow_drop_down</i></a></li>
+                <li class="right"><a href="./index.html">Обо мне</a></li>
             </ul>
         </div>
 
     </div>
-</nav>
+</nav>-->
+<ul id="slide-out" class="side-nav fixed blue-grey darken-4">
+    <li>
+        <div class="user-view">
+            <div class="background">
+                <img src="images/wp1.jpeg">
+            </div>
+            <a href="#!user"><img class="circle" src="images/M0plQrilL0I.jpg"></a>
+            <h3 class="white-text name" style="margin-bottom: 0">Стубарев Игорь</h3>
+            <small class="white-text">Junior .Net разработчик</small><br/>
+            <small class="white-text">Qlik Sense Certified Data Architect</small><br />
+            <a href="mailto:igor.stubarev@yandex.ru" class="fa fa-envelope-o tooltipped white-text" data-position="bottom" data-delay="50" data-tooltip="Email"><span>&nbsp;&nbsp;&nbsp;Связяться</span></a>
+        </div>
+    </li>
+    <li><a class="dropdown-button waves-effect waves-light white-text" href="#!" data-activates="dropdown1">Проекты<i class="material-icons right white-text">arrow_drop_down</i></a></li>
+    <li><a class="dropdown-button waves-effect waves-light white-text" href="#!" data-activates="dropdown2">Мероприятия<i class="material-icons right white-text">arrow_drop_down</i></a></li>
+</ul>
+<a href="#" data-activates="slide-out" class="button-collapse hide-on-med-and-up"><i class="material-icons">menu</i></a>
 <main class="row" style="width: 100%;margin-top: 60px">
     <div class="col s10 offset-s1">
 
@@ -60,7 +87,7 @@
     </div>
 </main>
 
-<footer class=" blue-grey darken-4 white-text">
+<footer >
     <div class="footer-copyright">
         <div class="container">
             
@@ -96,6 +123,14 @@
     $(document).ready(function(){
         $('.tooltipped').tooltip({delay: 50});
     });
+    $('.button-collapse').sideNav({
+        menuWidth: 300, // Default is 300
+        edge: 'left', // Choose the horizontal origin
+        closeOnClick: false, // Closes side-nav on <a> clicks, useful for Angular/Meteor
+        draggable: true, // Choose whether you can drag to open on touch screens,
+    }
+  );
+    
 </script>
 </body>
 </html>
