@@ -9,6 +9,14 @@
     <link rel="stylesheet" href="./css/font-awesome.min.css">
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <link rel="stylesheet" href="./css/main.css">
+	<style>
+	nav {
+	height: 120px;
+	@media (max-device-width:600px){
+	height: 240px;
+	}
+	}
+	</style>
 </head>
 <body>
 <ul id="dropdown1" class="dropdown-content">
@@ -18,17 +26,17 @@
 <ul id="dropdown2" class="dropdown-content">
     <li><a href="./worldskills2017.html">World Skills 2017</a></li>
 </ul>
-<nav style="height: 120px">
+<nav>
     <div class="nav-wrapper blue-grey darken-4">
         <div class="row">
-            <img class="col" alt="Photo" src="images/M0plQrilL0I.jpg" width="120" height="100" style="overflow: hidden; width: 120px; height: 100px; margin-top: 10px; border-radius: 50%; margin-left: 50px; display: inline-flex; flex-basis: 100px"/>
-            <div class="col" style="margin-left: 30px">
+            <img class="col m2 hide-on-small-only" alt="Photo" src="images/M0plQrilL0I.jpg" width="120" height="100" style="overflow: hidden; width: 120px; height: 100px; margin-top: 10px; border-radius: 50%; margin-left: 50px; display: inline-flex; flex-basis: 100px"/>
+            <div class="col s12 m5" style="margin-left: 30px">
                 <h3 style="margin-bottom: 0">Стубарев Игорь</h3>
                 <small>Junior .Net разработчик</small>
                 <small>Qlik Sense Certified Data Architect</small>
                 <a href="mailto:igor.stubarev@yandex.ru" class="fa fa-envelope-o tooltipped" data-position="bottom" data-delay="50" data-tooltip="Email"><span> Связяться</span></a>
             </div>
-            <ul id="nav-mobile" class="col right">
+            <ul id="nav-mobile" class="col s12 m5 right">
                 <li><a href="./index.html">Обо мне</a></li>
                 <li><a class="dropdown-button" href="#!" data-activates="dropdown1">Проекты<i class="material-icons right">arrow_drop_down</i></a></li>
                 <li><a class="dropdown-button" href="#!" data-activates="dropdown2">Мероприятия<i class="material-icons right">arrow_drop_down</i></a></li>
